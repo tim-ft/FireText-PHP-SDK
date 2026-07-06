@@ -3,6 +3,11 @@
     "description": "A PHP SDK for the FireText.co.uk API",
     "require": {
         "laminas/laminas-hydrator": "~4.3"
+        "illuminate/log": "^5.8",
+        "illuminate/support": "^5.8",
+        "illuminate/container": "^5.8",
+        "illuminate/config": "^5.8",
+        "illuminate/events": "^5.8"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.19 || ^3.0",
@@ -23,5 +28,10 @@
         "classmap": [
             "tests/"
         ]
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": false
+        }
     }
 }
